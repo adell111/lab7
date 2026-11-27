@@ -1,5 +1,5 @@
 import re
-text = input("Введите вашу стоку: \n").strip()
+text = input("Введите вашу строку: \n").strip()
 cleaned = re.sub(r"[^\w]", '', text.lower())
 if cleaned == cleaned[::-1]:
     print("Ваша строка палиндром.")
